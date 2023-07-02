@@ -33,6 +33,14 @@
         }
       }
     }
+
+    stage('CleanUp') {
+      steps {
+        script {
+          sh 'echo "CleanUp Stage"'
+        }
+      }
+    }
   }
 }
 
