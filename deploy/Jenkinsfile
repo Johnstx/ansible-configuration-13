@@ -18,7 +18,7 @@
       }
     }
 
-    stage ('Package') {
+    stage('Package') {
       steps {
         script {
           sh 'echo "Package State"'
