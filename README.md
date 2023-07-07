@@ -8,6 +8,14 @@
 - python3 -m pip install PyMySQL
 - python3 -m pip install mysql-connector-python
 - python3 -m pip install psycopg2==2.7.5 --ignore-installed
+ #incase you get a missing dependencies error (gcc or pg_config), run the installs below before the *psycopg2==2.7.5*
+ 
+  - #### sudo yum groupinstall "Development Tools"
+  - #### sudo yum install postgresql-devel python3-devel
+  - #### python3 -m pip install psycopg2-binary OR 
+  - #### python3 -m pip install psycopg2==2.7.5 --ignore-installed
+
+
 
 #### Installing  JAVA
 ====================================
@@ -252,3 +260,4 @@ stage('Plot Code Coverage Report') {
 
 }
 }
+
