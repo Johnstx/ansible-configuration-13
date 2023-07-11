@@ -113,10 +113,10 @@ mysql_config_include_files: []
 # replicate: 1
 
 mysql_databases:
-name: homestead
-collation: utf8_general_ci
-encoding: utf8
-replicate: 1
+  - name: homestead
+    collation: utf8_general_ci
+    encoding: utf8
+    replicate: 1
 
 # Users.
 # mysql_users:
@@ -126,10 +126,10 @@ replicate: 1
 # priv: '*.*:ALL,GRANT'
 
 mysql_users:
-name: homestead
-host: 172.31.29.6
-password: sePret^i
-priv: '*.*:ALL,GRANT'
+  - name: homestead
+    host: 172.31.29.6
+    password: sePret^i
+    priv: '*.*:ALL,GRANT'
 
 mysql_disable_log_bin: false
 
