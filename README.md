@@ -261,3 +261,9 @@ stage('Plot Code Coverage Report') {
 }
 }
 
+
+### Project 14
+1.  A rhel ec2 instance with a t2 medium option is used because of the heavy jobs that will be run.
+2. Intsall git and clone the repo from  scm
+3. install jenkins with the guide from above
+4. install blue ocean plugin in the jenkins ui
