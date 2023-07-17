@@ -267,3 +267,11 @@ stage('Plot Code Coverage Report') {
 2. Intsall git and clone the repo from  scm
 3. install jenkins with the guide from above
 4. install blue ocean plugin in the jenkins ui
+
+
+----------------------------------------------
+run playbook
+
+the three
+
+the sixth
