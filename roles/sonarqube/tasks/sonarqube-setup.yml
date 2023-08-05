@@ -36,15 +36,12 @@
 
 
 - name: Delete User from Group
-  hosts: your_target_host
   become: yes
-
-  tasks:
-    - name: Remove user from group
-      user:
-        name: sonar
-        groups: sonar
-        state: absent
+  name: Remove user from group
+  user:
+      name: sonar
+      groups: sonar
+      state: absent
 
 # - name: remove sonar user
 #   become: yes
