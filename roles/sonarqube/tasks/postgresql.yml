@@ -43,8 +43,8 @@
 #     name: sonar
 #     password: sonar
 #     priv: "ALL"
-   
 
+---
 - name: Delete PostgreSQL User, Database, and Group
   become: yes
   name: Delete Database
