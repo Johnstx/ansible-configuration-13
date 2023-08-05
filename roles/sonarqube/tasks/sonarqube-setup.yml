@@ -36,7 +36,7 @@
 
 - name: remove sonar user
   become: yes
-  ansible.builtin.shell: userdel -R sonar
+  ansible.builtin.shell: userdel -r sonar
 # - name: add user to run sonar
 #   ansible.builtin.shell: useradd -c "user to run SonarQube" -d /opt/sonarqube -g sonar sonar 
 
