@@ -34,9 +34,21 @@
     path: /opt/sonarqube-7.9.3.zip
     state: absent
 
-- name: remove sonar user
+
+- name: Delete User from Group
+  hosts: your_target_host
   become: yes
-  ansible.builtin.shell: userdel -r sonar
+
+  tasks:
+    - name: Remove user from group
+      user:
+        name: sonar
+        groups: sonar
+        state: absent
+
+# - name: remove sonar user
+#   become: yes
+#   ansible.builtin.shell: userdel -r sonar
 # - name: add user to run sonar
 #   ansible.builtin.shell: useradd -c "user to run SonarQube" -d /opt/sonarqube -g sonar sonar 
 
